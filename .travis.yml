@@ -10,3 +10,6 @@ services:
   - mysql
 before_install:
   - mysql -e 'CREATE DATABASE testdb;'
+script:
+  - npm start &
+  - npm test
