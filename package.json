@@ -10,7 +10,7 @@
         "test": "concurrently \"npm start\" \"jest && npm run lint\"",
         "lint": "eslint --quiet",
         "testing": "concurrently \"nodemon server.js\" \"jest --watchAll\"",
-        "start": "node server"
+        "start": "node server.js"
     },
     "repository": {
         "type": "git",
