@@ -7,7 +7,7 @@
         "testURL": "http://localhost:4000"
     },
     "scripts": {
-        "test": "concurrently \"npm start\" \"jest && npm run lint\"",
+        "test": "concurrently \"npm start\" \"jest --watchAll=false && npm run lint\"",
         "lint": "eslint --quiet",
         "testing": "concurrently \"nodemon server.js\" \"jest --watchAll\"",
         "start": "node server.js"
