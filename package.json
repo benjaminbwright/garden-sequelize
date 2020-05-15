@@ -41,5 +41,11 @@
         "express": "^4.17.1",
         "husky": "^4.2.5",
         "jest": "^24.9.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-push": "npm start & npm test && cd client && npm test"
+        }
     }
+
 }
