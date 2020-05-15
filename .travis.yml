@@ -13,3 +13,4 @@ before_install:
 script:
   - npm start &
   - npm test
+  - cd client && npm install && npm run test
