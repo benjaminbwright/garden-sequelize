@@ -4,7 +4,10 @@
     "description": "",
     "main": "index.js",
     "jest": {
-        "testURL": "http://localhost:4000"
+        "testURL": "http://localhost:4000",
+        "modulePathIgnorePatterns": [
+            "client"
+        ]
     },
     "scripts": {
         "test": "jest --watchAll=false && npm run lint",
@@ -25,7 +28,8 @@
     "homepage": "https://github.com/benjaminbwright/garden-sequelize#readme",
     "devDependencies": {
         "concurrently": "^5.2.0",
-        "eslint": "^7.0.0",
+        "create-react-app": "^3.4.1",
+        "eslint": "^6.6.0",
         "eslint-config-prettier": "^6.11.0",
         "eslint-plugin-prettier": "^3.1.3",
         "nodemon": "^2.0.4",
@@ -33,8 +37,9 @@
     },
     "dependencies": {
         "axios": "^0.19.2",
+        "babel-jest": "^24.9.0",
         "express": "^4.17.1",
         "husky": "^4.2.5",
-        "jest": "~25"
+        "jest": "^24.9.0"
     }
 }
