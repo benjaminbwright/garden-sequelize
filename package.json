@@ -9,7 +9,7 @@
     "scripts": {
         "test": "jest --watchAll=false && npm run lint",
         "lint": "eslint --quiet",
-        "testing": "concurrently \"nodemon server.js\" \"jest --watchAll\"",
+        "test-dev": "concurrently \"nodemon server.js\" \"jest --watchAll\"",
         "start": "node server.js"
     },
     "repository": {
@@ -34,6 +34,7 @@
     "dependencies": {
         "axios": "^0.19.2",
         "express": "^4.17.1",
+        "husky": "^4.2.5",
         "jest": "~25"
     }
 }
