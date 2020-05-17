@@ -4,6 +4,8 @@ const app = express();
 
 const PORT = 4000;
 
+// added a comment
+
 app.get("*", (req, res) => {
   res.status(404).send("File not found");
 });
